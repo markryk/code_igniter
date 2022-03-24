@@ -22,3 +22,15 @@ textarea {
 input.botao {
 	width: auto;
 }
+
+.msg-box {
+	background: #f1f2ea;
+	border: 1px solid #c7cbab;
+	padding: 5px 10px;
+	margin-bottom: 15px;
+	color: #727272;
+}
+.msg-box p {
+	margin: 0;
+	padding: 2px 0;
+}
