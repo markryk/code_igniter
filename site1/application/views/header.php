@@ -13,16 +13,23 @@
             <div class="linha">
                 <header>
                     <div class="coluna col4">
-                        <h1 class="logo">Lucas Monteiro Ribeiro</h1>
+                        <h1 class="logo">
+                            <?php 
+                                /*if ($nome_site = $this->option->get_option('nome_site')): echo $nome_site;
+                                else: echo "Falta configurar";
+                                endif;*/
+                                echo $this->option->get_option('nome_site', 'Falta configurar');
+                            ?>
+                        </h1>
                     </div>
                     <div class="coluna col8">
                         <nav>
                             <ul class="menu inline sem-marcador">
-                                <li><a href="<?php echo base_url(); ?>">home</a></li>
-                                <li><a href="<?php echo base_url('clientes'); ?>">clientes</a></li        >
-                                <li><a href="<?php echo base_url('servicos'); ?>">serviços</a></li>
-                                <li><a href="<?php echo base_url('sobre'); ?>">sobre</a></li>
-                                <li><a href="<?php echo base_url('contato'); ?>">contato</a></li>
+                                <li><a href="<?php echo base_url(); ?>"> Home </a></li>
+                                <li><a href="<?php echo base_url('clientes'); ?>"> Clientes </a></li>
+                                <li><a href="<?php echo base_url('servicos'); ?>"> Serviços </a></li>
+                                <li><a href="<?php echo base_url('sobre'); ?>"> Sobre </a></li>
+                                <li><a href="<?php echo base_url('contato'); ?>"> Contato </a></li>
                             </ul>
                         </nav>
                     </div>

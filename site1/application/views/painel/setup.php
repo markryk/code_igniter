@@ -26,7 +26,7 @@
                     echo form_label('Senha: ', 'senha');
                     echo form_password('senha', set_value('senha'));
                     echo form_label('Repita a senha: ', 'senha2');
-                    echo form_password('senha2', set_value('senha2'));
+                    echo form_password('senha2', set_value('senha2'))
                     echo form_submit('enviar', 'Salvar dados', array('class' => 'botao'));
                     echo form_close();
                 ?>
