@@ -8,6 +8,9 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet"/>
         <link rel="stylesheet" href="<?php echo base_url('assets/css/estilo.css') ?>" />
         <link rel="stylesheet" href="<?php echo base_url('assets/css/painel.css') ?>" />
+        <link rel="stylesheet" href="<?php echo base_url('assets/css/jquery-te-1.4.0.css') ?>" />
+        <script type="text/javascript" src="<?php echo base_url('assets/js/jquery-3.6.0.min.js') ?>"></script>
+        <script type="text/javascript" src="<?php echo base_url('assets/js/jquery-te-1.4.0.min.js') ?>"></script>
     </head>
     <body>
         <div class="header">

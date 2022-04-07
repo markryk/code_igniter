@@ -45,7 +45,7 @@
                         echo form_label('Titulo: ', 'titulo');
                         echo form_input('titulo', set_value('titulo'));
                         echo form_label('Conteudo: ', 'conteudo');
-                        echo form_textarea('conteudo', set_value('conteudo'));
+                        echo form_textarea('conteudo', to_html(set_value('conteudo')), array('class' => 'editorhtml'));
                         echo form_label('Imagem da notícia (thumbnail): ', 'imagem');
                         echo form_upload('imagem');
                         echo form_submit('enviar', 'Salvar notícia', array('class' => 'botao'));
@@ -55,7 +55,14 @@
                         echo "Tela de alteração";
                     break;
                     case 'excluir':
-                        echo "Tela de exclusão";
+                        echo form_open_multipart();
+                        echo form_label('Titulo: ', 'titulo');
+                        echo form_input('titulo', set_value('titulo', to_html($noticia->titulo)));
+                        echo form_label('Conteudo: ', 'conteudo');
+                        echo form_textarea('conteudo', to_html(set_value('conteudo', $noticia->conteudo)), array('class' => 'editorhtml'));
+                        echo '<p><small> Imagem: </small><br><img src="'.base_url('uploads/'.$noticia->imagem).'" class="thumb-edicao"></p>';
+                        echo form_submit('enviar', 'Excluir notícia', array('class' => 'botao'));
+                        echo form_close();
                     break;
                 endswitch;
             ?>
