@@ -180,3 +180,7 @@ ul.noticias li p a{
 .contato input botao{
     width: auto;
 }
+img.thumb{
+    width: 100px;
+    height: auto;
+}
