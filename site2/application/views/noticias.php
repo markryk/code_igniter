@@ -1,5 +1,5 @@
 <div class="coluna col5">
-    <h3>ultimas noticias</h3>
+    <h2 class="font"> Últimas notícias </h3>
     <ul class="sem marcador sem padding noticias">
         <?php
             if ($noticias = $this->noticia->get(3)):

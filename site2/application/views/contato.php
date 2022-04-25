@@ -2,22 +2,21 @@
 <div class="linha">
     <section>
         <div class="coluna col5 sidebar">
-            <h3>Localização</h3>
+            <h2 class="font"> Localização </h2>
             <img src="<?php echo base_url('assets/img/mapa.jpg') ?>" alt=""/>
             <ul class="sem padding sem marcador">
-                <li>Rua Guaratingueta 568</li>
-                <li>Bairro Cidade Salvador</li>
-                <li>jacareí - SP</li>
+                <li> Rua Xxx Xxxxxx, 888 </li>
+                <li> Bairro Xxxxxxx </li>
+                <li> Fortaleza - CE</li>
             </ul>
-            <h3>Contato Direto</h3>
-            <ul class="sem padding sem marcador"
-                <li>Fone:<strong>(00) 39529884</strong>
-                <li>Email: <strong>luckas.ribeiro2015@gmail.com</strong></li>
-                <li>Skype: <strong>Lucas Ribeiro</strong></li>
+            <h2 class="font"> Contato direto </h2>
+            <ul class="sem padding sem marcador">
+                <li> Fone: <strong> (XX) Xxxxx-xxxx </strong>
+                <li> Email: <strong> marcus.henrick.marcushenrick@gmail.com </strong></li>
             </ul>
         </div>
         <div class="coluna col7 contato">
-            <h2>Envie uma mensagem</h2>
+            <h2 class="font">Envie uma mensagem</h2>
 
             <?php
                 if ($form_error):
@@ -40,15 +39,18 @@
 </div>
 <div class="conteudo-extra">
     <div class="linha">
-        <div class="coluna col7">
+        <div class="coluna col6">
             <section>
-                <h2>metodo alternativo de contato</h2>
-                <p>chama no zap la que eu respondo: (12) 988775469</p>
-                <p>se nao conseguir pau no seu cu otario huahuah</p>
-                </p>
+                <h2 class="font"> Minhas redes sociais</h2>
+                <a href="https://www.instagram.com/marcushenrick_dwg/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://github.com/markryk" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://gitlab.com/markryk" target="_blank"><ion-icon name="logo-gitlab"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/marcos-henrique-1536b41b2/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
             </section>
         </div>
-        <?php $this->load->view('noticias'); ?>
+        <div class="coluna">
+            <?php $this->load->view('noticias'); ?>
+        </div>
     </div>
 </div>
 <?php $this->load->view('footer'); ?>

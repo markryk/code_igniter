@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Teko&display=swap');
 body{
     font-family: 'Roboto', sans-serif;
     color: #333;
@@ -58,6 +59,10 @@ a:hover{
     width: 940px;
 }
 
+.m0{
+    margin: 0;
+}
+
 /*estilos reutilizaveis*/
 .sem-paddin{
     padding: 0 important;
@@ -75,6 +80,10 @@ ul li, ol li{
     margin-bottom: 5px;
 }
 
+ul li a, ol li a {
+    color: #000000;
+}
+
 ul.inline li, ol.inline li{
     display: inline;
     margin-right: 15px;
@@ -88,14 +97,16 @@ ul.sem-marcador, ol.sem-marcador{
     list-style: none;
 }
 a.botao, input.botao{
-    background: #1f3c58;
+    /*background: #1f3c58;*/
+    background: #D3F2F2;
     padding: 5px 10px;
     border-radius: 3px;
-    color: #ebebeb;
+    color: #000000;
     cursor: pointer;
     margin: 5px 0;
     display: inline-block;
     border: none;
+    text-transform: uppercase;
 }
 a.botao:hover, input.botao:hover{
     background: #315eBa;
@@ -109,15 +120,20 @@ img{
 /*layout do site */
 
 .header{
-    background: #dee3e6;
+    /*background: #dee3e6;*/
+    background: #0DFF96;
 }
 h1.logo{
-    font-weight: 300px;
-    color: #315eBa;
+    /*font-weight: 300px;*/
+    color: #000000;
     letter-spacing: -2px;
+    font-family: 'Charm', cursive;
+}
+.font {
+    font-family: 'Charm', cursive;
 }
 .conteudo-extra{
-    background: #f1f2ea;
+    background: #E5F9E0;
 }
 .footer{
     background: #1f3c58;
@@ -125,6 +141,15 @@ h1.logo{
     padding: 20px 0;
     text-align: center;
     font-weight: 100px;
+}
+.footer span a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Teko';
+    font-size: 20pt;
+}
+ion-icon {
+    font-size: 25pt;
 }
 .menu{
     text-transform: uppercase;
@@ -134,6 +159,7 @@ h1.logo{
 .menu li a{
     padding: 5px 10px;
     border-radius: 3px;
+    color: #000000;
 }
 .menu li a:hover{
     text-decoration: none;
