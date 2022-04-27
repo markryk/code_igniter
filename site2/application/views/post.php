@@ -18,14 +18,14 @@
 </div>
 <div class="conteudo-extra">
     <div class="linha">
-        <div class="coluna col7">
+        <!--<div class="coluna col7">
             <section>
                 <h2>Curiosidades</h2>
                 <p>paragrafo aleatorio</p>
                 <P>pararafo aleatorio</P>
                 <p>paragrafo aleatorio</p>
             </section>
-        </div>
+        </div>-->
         <?php $this->load->view('noticias'); ?>
     </div>
 </div>

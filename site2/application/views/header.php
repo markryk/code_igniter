@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="assets/css/estilo.css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet"/>
 
-        <!--<link rel="stylesheet" href="<?php //echo base_url('assets/css/estilo.css') ?>" />-->
-        <!--<link rel="stylesheet" href="<?php //echo base_url('assets/css/normalize.css') ?>"/>-->
+        <link rel="stylesheet" href="<?php echo base_url('assets/css/estilo.css') ?>" />
+        <link rel="stylesheet" href="<?php echo base_url('assets/css/normalize.css') ?>"/>
 
     </head>
     <body>
@@ -32,17 +32,11 @@
                     <div class="coluna col7">
                         <nav>
                             <ul class="menu inline sem-marcador">
-                                <li><a href="<?php echo base_url(); ?>"> Home </a></li>                         
-                                <li><a href="clientes"> Clientes </a></li>                                
-                                <li><a href="servicos"> Serviços </a></li>                                
-                                <li><a href="sobre"> Sobre </a></li>                                
-                                <li><a href="contato"> Contato </a></li>
-
-                                <!--<li><a href="<?php echo base_url(); ?>"> Home </a></li>
-                                <li><a href="<?php //echo base_url('clientes'); ?>"> Clientes </a></li>
-                                <li><a href="<?php //echo base_url('servicos'); ?>"> Serviços </a></li>
-                                <li><a href="<?php //echo base_url('sobre'); ?>"> Sobre </a></li>
-                                <li><a href="<?php //echo base_url('contato'); ?>"> Contato </a></li>-->
+                                <li><a href="<?php echo base_url(); ?>"> Home </a></li>
+                                <li><a href="<?php echo base_url('clientes'); ?>"> Clientes </a></li>
+                                <li><a href="<?php echo base_url('servicos'); ?>"> Serviços </a></li>
+                                <li><a href="<?php echo base_url('sobre'); ?>"> Sobre </a></li>
+                                <li><a href="<?php echo base_url('contato'); ?>"> Contato </a></li>
                             </ul>
                         </nav>
                     </div>

@@ -11,6 +11,7 @@
                             <p>
                                 <?php echo resumo_post($linha->conteudo); ?> ... 
                                 <a href="<?php echo base_url('post/'.$linha->id); ?>"> Leia mais &raquo; </a>
+                                <!--<a href="post/" <?php echo $linha->id; ?>> Leia mais &raquo; </a>-->
                             </p>
                         </li>
                     <?php
